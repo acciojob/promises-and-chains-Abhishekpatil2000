@@ -5,7 +5,7 @@ document.getElementById('btn').addEventListener('click',function (p) {
  let age= document.getElementById('age').value;
  let name= document.getElementById('name').value;
 	
-let submission= new Promise((Resolve,Reject){
+let submission= new Promise((Resolve,Reject)=> {
 	if (age>18) {
 		Resolve(name);
 	}
@@ -15,12 +15,12 @@ let submission= new Promise((Resolve,Reject){
 });
 submission.then( (name)=> {
 	setTimeout(()=> {
-		alert(`Welcome,${Name}. You can vote.`);
+		alert(`Welcome,${name}. You can vote.`);
 },4000);
 })
 .catch( (name)=>  {
 	setTimeout(()=> { 
-	alert(`Oh sorry ${Name}. You aren't old enough.`);
+	alert(`Oh sorry ${name}. You aren't old enough.`);
 },4000);
 }):
 });
