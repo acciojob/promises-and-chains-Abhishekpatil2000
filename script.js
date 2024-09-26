@@ -5,7 +5,6 @@ document.getElementById('btn').addEventListener('click',function (p) {
  let age= document.getElementById('age').value;
  let name= document.getElementById('name').value;
 	
-})
 let submission= new Promise((Resolve,Reject){
 	if (age>18) {
 		Resolve(name);
