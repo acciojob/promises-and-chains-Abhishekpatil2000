@@ -22,5 +22,5 @@ submission.then( (name)=> {
 	setTimeout(()=> { 
 	alert(`Oh sorry ${name}. You aren't old enough.`);
 },4000);
-}):
+});
 });
