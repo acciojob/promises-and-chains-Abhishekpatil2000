@@ -1,15 +1,27 @@
 //your JS code here. If required.
+document.getElementById('btn').addEventListener('click',function (p) {
+	p.preventDefault();
+
+ let age= document.getElementById('age').value;
+ let name= document.getElementById('name').value;
+	
+})
 let submission= new Promise((Resolve,Reject){
-	if (Age>18) {
-		Resolve(Name);
+	if (age>18) {
+		Resolve(name);
 	}
 	else{
-		Reject(Name);
+		Reject(name);
 	}
 });
-submission.then(setTimeout(function(Name) {
-	console.log(`Welcome,${Name}. You can vote.`)
-}),4000)
-.catch(setTimeout(function(Name) {
-	console.log(`Oh sorry ${Name}. You aren't old enough.`)
-}),4000)
+submission.then( (name)=> {
+	setTimeout(()=> {
+		alert(`Welcome,${Name}. You can vote.`);
+},4000);
+})
+.catch( (name)=>  {
+	setTimeout(()=> { 
+	alert(`Oh sorry ${Name}. You aren't old enough.`);
+},4000);
+}):
+});
