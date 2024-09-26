@@ -4,9 +4,14 @@ document.getElementById('btn').addEventListener('click',function (p) {
 
  let age= document.getElementById('age').value;
  let name= document.getElementById('name').value;
+
+	if (!age || !name) {
+		alert('Inputs cannot be empty');
+		return;
+	}
 	
-let submission= new Promise((Resolve,Reject)=> {
-	if (age>18) {
+let submission= new Promise((resolve,reject)=> {
+	if (age>=18) {
 		Resolve(name);
 	}
 	else{
