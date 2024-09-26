@@ -12,4 +12,4 @@ submission.then(setTimeout(function(Name) {
 }),4000)
 .catch(setTimeout(function(Name) {
 	console.log(`Oh sorry ${Name}. You aren't old enough.`)
-}))
+}),4000)
